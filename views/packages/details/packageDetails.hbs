@@ -1,0 +1,27 @@
+
+
+
+<div class="col-xl-4 col-md-6 col-sm-12 places-column">
+    <!--=== Single Place Item ===-->
+    <div class="single-place-item mb-60 wow fadeInUp">
+        <div class="place-img">
+            {{#each package.images}}
+            <img src="/package/{{this}}" alt="Package Image" width="100px" height="50px">
+            {{/each}}
+        </div>
+        <div class="place-content">
+            <div class="info">
+                <!-- Add other package information here -->
+                <h4 class="title"><a href="/packages/categories/{{package._id}}/overview">{{package.packageName}}</a></h4>
+                <p class="location"><i class="far fa-map-marker-alt"></i>{{package.location}}</p>
+                <!-- You can add more properties like price, duration, etc. -->
+                <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>{{package.price}}</p>
+                <div class="meta">
+                    <!-- Add more meta information if needed -->
+                    <span><a href="/packages/categories/{{package._id}}/overview">Details<i class="far fa-long-arrow-right"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

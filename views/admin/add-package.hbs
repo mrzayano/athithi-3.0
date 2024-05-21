@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Package</title>
+    <!-- Add your CSS styles here -->
+</head>
+
+<body>
+
+    <h1>Add Package</h1>
+    <div class="container">
+        <form action="/admin/add-package" method="POST" enctype="multipart/form-data">
+            <label for="packageName">Package Name:</label>
+            <input type="text" id="packageName" name="packageName" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="packageImage">Package Image:</label>
+            <input type="file" id="packageImage" name="packageImage" required>
+
+            <button type="submit">Add Package</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
